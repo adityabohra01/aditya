@@ -17,10 +17,10 @@ System.out.println("Server received:\n "+new String(request.getData()));
 String message = scan.nextLine();
 byte[] sendMessage = message.getBytes();
 DatagramPacket reply = new DatagramPacket(sendMessage, sendMessage.length, 
-                                    request.getAddress(), request.getPort());
+InetAddress.getByName("127.0.0.1"), 1537);
 server.send(reply);
 //server.close();
-scan.close();
+//scan.close();
 }
 }
 catch(Exception ex) {}
