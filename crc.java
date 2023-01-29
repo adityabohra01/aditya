@@ -53,7 +53,8 @@ class crc
         System.out.print(crc[i]);
 
     /*-------------------ERROR DETECTION---------------------*/
-    System.out.println();System.out.println("Enter CRC code of "+tot_length+" bits : ");
+    System.out.println();
+    System.out.println("Enter CRC code of "+tot_length+" bits : ");
     for(int i=0; i<crc.length; i++)
         crc[i]=Integer.parseInt(br.readLine());
 
